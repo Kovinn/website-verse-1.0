@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+  <title>Website Login</title>
+ 
+</head>
+<body
+<GitHub Pull Requests and Issuesbody background="DarkBG.jpg">
+  
+  <br><br>
+  <center>
+  <h1>Website Login</h1>
+</center>
+  <div id="login-form">
+    <div class="form-group">
+      <label for="username">Username:</label>
+      <input type="text" id="username" placeholder="Masukkan username">
+    </div>
+
+    <div class="form-group">
+      <label for="password">Password:</label>
+      <input type="password" id="password" placeholder="Masukkan password">
+    </div>
+
+    <button id="login-button">Login</button>
+
+    <div id="login-message"></div>
+    
+  </div>
+  
+<br>
+
+  <script>
+   var loginButton = document.getElementById('login-button');
+    var loginMessage = document.getElementById('login-message');
+
+  loginButton.addEventListener('click', function() {
+  var username = document.getElementById('username').value;
+  var password = document.getElementById('password').value;
+
+  if (username === 'Kevin Lay' && password === 'TI-2B') {
+    loginMessage.textContent = 'Login berhasil!';
+    loginMessage.style.color = 'green';
+    window.location.href = 'home.html';
+
+  } else {
+    loginMessage.textContent = 'Username atau password salah.';
+    loginMessage.style.color = 'red';
+  }
+});
+
+  </script>
+</body>
+</html>
