@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+  <title>Blog</title>
+
+</head>
+<body>
+  <div id="navbar" class="sticky">
+  <div id="navbar">
+    <a href="website.html">Log In</a>
+    <a href="home.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="blog.html">Blog</a>
+    <a href="galery.html">Galery</a>
+    <a class="active" href="kontak.html">Kontak</a>       
+  </div>
+</div>
+  <script>window.onscroll = function() {myFunction()};
+  
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }</script>
+  <br><br>
+<center>         
+                              
+              <body 
+              background="DarkBG.jpg">
+              <div class="container">
+                <h1>Contact Me</h1>
+            
+                <form action="submit-form.php" method="post">
+                  <label for="name">Name:</label>
+                  <input type="text" id="name" name="name"> <br><br>
+            
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email"> <br><br>
+            
+                  <label for="message">Message:</label>
+                  <textarea id="message" name="message"></textarea>
+            
+                  <input type="submit" value="Submit">
+                </form>
+                <p>Ambon, Latuhalat RT/RW (001/010)</p>
+                <p>NO : 081247533788</p>
+              </div>
+              
+</center>
+</body>
+</html>
